@@ -25,12 +25,40 @@ div {
   margin: 5px;
 }
 
-div img {
+.preview-baku img {
   width: 375px;
   height: 375px;
   padding: 1%;
   margin: 10px;
   object-fit: fill;
+  width:90%, auto;
+}
+
+.preview-london img {
+  width: 375px;
+  height: 375px;
+  padding: 1%;
+  margin: 10px;
+  object-fit: fill;
+  width:90%, auto;
+}
+
+.preview-madrid img {
+  width: 375px;
+  height: 375px;
+  padding: 1%;
+  margin: 10px;
+  object-fit: fill;
+  width:90%, auto;
+}
+
+.preview-rome img {
+  width: 375px;
+  height: 375px;
+  padding: 1%;
+  margin: 10px;
+  object-fit: fill;
+  width:90%, auto;
 }
 
 h1 {
@@ -55,7 +83,8 @@ h3 {
 @media screen and (min-width: 575px){
    div {
     margin: 1%;
-    width: 48%;
+    width: 40%;
+    float: left;
   }
 }
 
