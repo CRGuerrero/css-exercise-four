@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color:#cccccc;
+  background-color:#CCCCCC;
   display: block;
 }
 
@@ -16,7 +16,7 @@ nav {
 .container {
   width: 100%;
   line-height: 2em;
-  position: relative;
+  margin: 0 auto;
 }
 
 div {
@@ -25,40 +25,34 @@ div {
   margin: 5px;
 }
 
-.preview-baku img {
-  width: 375px;
-  height: 375px;
-  padding: 1%;
-  margin: 10px;
-  object-fit: fill;
-  width:90%, auto;
+.preview {
+  height: 300px;
+  margin: 2em 0;
+  width: 100%;
 }
 
-.preview-london img {
-  width: 375px;
-  height: 375px;
-  padding: 1%;
-  margin: 10px;
-  object-fit: fill;
-  width:90%, auto;
+.baku {
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
-.preview-madrid img {
-  width: 375px;
-  height: 375px;
-  padding: 1%;
-  margin: 10px;
-  object-fit: fill;
-  width:90%, auto;
+.london {
+  background-image: url(../images/london.png);
+  background-size: cover;
+  background-position: right;
 }
 
-.preview-rome img {
-  width: 375px;
-  height: 375px;
-  padding: 1%;
-  margin: 10px;
-  object-fit: fill;
-  width:90%, auto;
+.madrid {
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
 h1 {
@@ -73,10 +67,10 @@ h1 {
 h3 {
   font-family: serif;
   font-size: 2em;
-  padding-left: 10px;
-  padding-top: 60px;
-  margin-top: 15px;
-  margin-left: 30px;
+  padding-left: 5px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
   position: absolute;
 }
 
@@ -86,12 +80,32 @@ h3 {
     width: 40%;
     float: left;
   }
+  .preview {
+    background-size: cover;
+    float: left;
+    height: 200px;
+    margin: 2em 1%;
+    width: 48%;
+}
+.container {
+  width: 100%;
+  }
 }
 
-@media screen and (min-width: 1199px){
+@media screen and (min-width: 900px){
    div {
     margin: 1%;
     width: 22%;
     float: left;
+  }
+.preview {
+  background-size: cover;
+  float: left;
+  height: 200px;
+  margin: 2em 1%;
+  width: 23%;
+}
+.container {
+  width: 70%;
   }
 }
